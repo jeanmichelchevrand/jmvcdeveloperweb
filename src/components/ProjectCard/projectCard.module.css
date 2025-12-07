@@ -1,0 +1,93 @@
+.card {
+  width: 320px;
+  background: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.imageWrapper {
+  position: relative;
+  height: 12rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #e5e7eb, #d1d5db);
+  font-size: 2.5rem;
+  color: #6b7280;
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.badgeFrontend {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.badgeGames {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+.badgeEducation {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badgeDefault {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #111827;
+  margin: 0 0 0.25rem;
+}
+
+.description {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 3 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techBadge {
+  font-size: 0.75rem;
+  background: #f3f4f6;
+  color: #374151;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.footer {
+  display: flex;
+  gap: 0.75rem;
+  padding-top: 1rem;
+}

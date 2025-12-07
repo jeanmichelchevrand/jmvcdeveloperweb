@@ -1,6 +1,9 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-nav: #fef6f0;       /* fundo claro */
+  --text-nav-primary: #f97316;          /* laranja vibrante */
+  --text-nav-secundary: #1e293b;             /* azul escuro */
+  --text-nav-tertiary: #3b82f6;           /* azul claro */
+  --transparente: #00000000;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,0 +1,181 @@
+/*.footer{
+    background-color: var(--bg-nav);
+}
+
+.footerContainer{
+    margin: 0 auto 0 auto;
+    padding: 12px 4px 12px 4px;
+}
+
+.gridContainer {
+  display: grid;
+  gap: 2rem;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.leftSectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-nav-secundary);
+}
+
+.leftSectionTitle span:first-child {
+  color: var(--text-nav-primary);
+}
+
+.leftSectionTitle span:last-child {
+  color: var(--text-nav-tertiary);
+}
+
+.textFooter{
+    color: var(--text-nav-tertiary);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.textSpanFooter{
+    color: var(--text-nav-primary);
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}*/
+
+
+.footer {
+  background-color: var(--bg-nav);
+  border-top: 1px solid rgba(30, 41, 59, 0.2);
+  padding: 2rem 1.5rem 2rem;
+}
+
+.footerContainer {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.gridContainer {
+  display: grid;
+  gap: 2rem;
+}
+
+/* ----- SEÇÃO ESQUERDA (LOGO + REDES) ----- */
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.leftSectionTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.leftSectionTitle span:first-child {
+  color: var(--text-nav-primary);
+}
+
+.leftSectionTitle span:last-child {
+  color: var(--text-nav-tertiary);
+}
+
+/* ----- TEXTOS ----- */
+.textFooter {
+  color: var(--text-nav-secundary);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.textSpanFooter {
+  color: var(--text-nav-primary);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.textFooterA{
+  color: var(--text-nav-primary);
+  font-size: 1.25rem;
+  line-height: 2rem;
+  cursor: pointer;
+}
+.textFooterA:hover{
+  color: var(--text-nav-tertiary) !important;
+}
+
+/* ----- TÍTULOS DAS SEÇÕES ----- */
+.h3Text {
+  color: var(--text-nav-secundary) !important;
+  font-weight: 600;
+}
+
+/* ----- LINKS ----- */
+.ButtonFooter{
+  background-color: var(--text-nav-tertiary);
+  border: 1px solid #f97316;
+}
+
+.footer button,
+.footer a {
+  color: var(--text-nav-secundary);
+  transition: all 0.3s ease;
+}
+
+.footer button:hover,
+.footer a:hover {
+  color: var(--text-nav-primary);
+  transform: translateY(-1px);
+}
+
+/* ----- ÍCONES SOCIAIS ----- */
+.iconContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .w-10.h-10 {
+  background-color: var(--text-nav-secundary);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.footer .w-10.h-10:hover {
+  background-color: var(--text-nav-primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ----- LAYOUT ----- */
+@media (min-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+  }
+
+  .textFooter {
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+  .footerContainer {
+    text-align: center;
+  }
+
+  .leftSection {
+    align-items: center;
+  }
+}

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.contatoSection {
+  background: linear-gradient(135deg,rgba(59, 130, 246, 1) 0%, rgba(249, 115, 22, 1) 100%);
+  color: var(--text-nav-secundary);
+  padding: 4rem 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+.titulo {
+  color: var(--text-nav-primary);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.subtitulo {
+  color: var(--text-nav-secundary);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.socialContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--text-nav-tertiary);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  background: var(--text-nav-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--bg-nav);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(30, 41, 59, 0.1);
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--text-nav-tertiary);
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+  background-color: var(--bg-nav);
+  color: var(--text-nav-secundary);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: var(--text-nav-primary);
+}
+
+.botaoEnviar {
+  background: var(--text-nav-primary);
+  color: var(--bg-nav);
+  border: none;
+  padding: 0.9rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.botaoEnviar:hover {
+  background: var(--text-nav-tertiary);
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .socialLink {
+    width: 100%;
+    justify-content: center;
+  }
+}
