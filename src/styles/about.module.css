@@ -252,6 +252,38 @@
 /* 📱 RESPONSIVIDADE */
 /* ===================== */
 
+/* Telas grandes (monitores) */
+@media (min-width: 1025px) {
+  .aboutSection {
+    padding: 6rem 0;
+    margin-bottom: -7rem;
+  }
+
+  .sectionTitle {
+    font-size: 2.5rem;
+  }
+
+  .sectionDescription {
+    font-size: 1.25rem;
+    max-width: 40rem;
+  }
+
+  .columns {
+    gap: 5rem;
+  }
+
+  .leftColumn {
+    margin-bottom: 30rem;
+  }
+  .carouselSection{
+    margin-top: -40rem;
+  }
+
+  .profilePhotoOuter {
+    width: 18rem;
+    height: 22rem;
+  }
+}
 /* Telas médias (tablets) */
 @media (max-width: 1024px) {
   .aboutSection {

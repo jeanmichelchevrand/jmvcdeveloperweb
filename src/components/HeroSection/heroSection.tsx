@@ -54,8 +54,7 @@ const HeroSection: React.FC = () => {
           <div className={styles.introText}>
             <h2 className={styles.subtitle}>Olá, eu sou</h2>
             <h1 className={styles.title}>
-              <span className={styles.whiteText}>Jean Michel V.</span>
-              <span className={styles.techGreen}> Chevrand</span>
+              <span className={styles.whiteText}>Jean Michel</span>
             </h1>
             <div className={styles.typingWrapper}>
               <h3 className={styles.typingText}>

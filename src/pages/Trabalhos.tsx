@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Link from "next/link";
 import styles from '@/styles/trabalho.module.css';
 
 import gameUm from "@/assets/jogo1.gif";
@@ -20,7 +21,7 @@ const GameplayCard = () => {
                         </div>
                         {/* Área de título e descrição */}
                     <div className={styles.cardContent}>
-                        <h3 className={styles.cardTitle}>Battle in Space</h3>
+                        <h3 className={styles.cardTitle}><Link href="https://dev-jean-michel-chevrand.itch.io/shipvsasteroid" target="_blank" rel="noopener noreferrer">Battle in Space</Link></h3>
                         <p className={styles.cardDescription}>Shooter</p>
                         <p className={styles.cardDescription}>Construct 3</p>
                     </div>
@@ -38,7 +39,7 @@ const GameplayCard = () => {
                         </div>
                         {/* Área de título e descrição */}
                     <div className={styles.cardContentDois}>
-                        <h3 className={styles.cardTitle}>Ship vs. Asteroids</h3>
+                        <h3 className={styles.cardTitle}><Link href="https://dev-jean-michel-chevrand.itch.io/shipvsasteroid" target="_blank" rel="noopener noreferrer">Ship vs. Asteroids</Link></h3>
                         <p className={styles.cardDescription}>Shooter</p>
                         <p className={styles.cardDescription}>Unity</p>
                     </div>
@@ -56,7 +57,7 @@ const GameplayCard = () => {
                         </div>
                         {/* Área de título e descrição */}
                     <div className={styles.cardContentDois}>
-                        <h3 className={styles.cardTitle}>Pong</h3>
+                        <h3 className={styles.cardTitle}><Link href="https://dev-jean-michel-chevrand.itch.io/pong" target="_blank" rel="noopener noreferrer">Pong</Link></h3>
                         <p className={styles.cardDescription}>Sports</p>
                         <p className={styles.cardDescription}>Unity</p>
                     </div>
